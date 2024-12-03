@@ -1,0 +1,601 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>huge codes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="images/log.png" type="image/svg+xml">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div id="preloader" class="preloader">
+        <div class="logo-container">
+            <img id="logo" src="image (1).png" alt="Logo" />
+            <div id="typewriter-text" class="typewriter"></div>
+        </div>
+        <pre id="code-background" class="typewriter"></pre> <!-- Элемент для кода с анимацией печатания -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar">0%</div>
+        </div>
+        <button class="enter-btn hidden" id="enter-btn" onclick="enterWebsite()">open huge</button>
+    </div>
+    
+
+    <!-- Основной контент -->
+    <div id="main-site" class="hidden">
+        <div class="container">
+            <header>
+                <div class="top-bar">
+                    <div class="left-buttons">
+                        <span><a href="https://x.com/huge_codes" target="_blank">Pumpfun Monopoly</a></span>
+                        <span><a href="https://x.com/huge_codes" target="_blank">twitter</a></span>
+                        <span><a href="https://pump.fun/" target="_blank">$Funopoly</a></span>
+                    </div>
+                    <div class="right-buttons">
+                        <button class="popup-button" onclick="openPopup()">how it works</button>
+                    </div>
+                </div>
+              
+            </header>
+            <div class="main-content">
+                <div class="profile">
+                    <div id="amount">$86,460,650.00/div>
+                </div>
+                <div class="items">
+                <!-- List of Items -->
+                <div class="item">
+                    <img src="images/andre.png" alt="Flip Flops">
+                    <div class="item-details">
+                        <span class="item-name">Andre Tacos</span>
+                        <span class="item-price">$5</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Flip Flops', 5)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Flip Flops">0</span>
+                        <button class="buy-button" onclick="buyItem('Flip Flops', 5)">Buy</button>
+                    </div>
+                </div>
+                <!-- Repeat for all items -->
+                <div class="item">
+                    <img src="images/banana.png" alt="Big Mac">
+                    <div class="item-details">
+                        <span class="item-name">Banana expired taped</span>
+                        <span class="item-price">$6</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Big Mac', 6)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Big Mac">0</span>
+                        <button class="buy-button" onclick="buyItem('Big Mac', 6)">Buy</button>
+                    </div>
+                </div>
+                <!-- Continue with the rest of the items -->
+                <div class="item">
+                    <img src="images/chillguy.png" alt="Coca-Cola Pack">
+                    <div class="item-details">
+                        <span class="item-name">Not chillguy</span>
+                        <span class="item-price">$7</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Coca-Cola Pack', 7)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Coca-Cola Pack">0</span>
+                        <button class="buy-button" onclick="buyItem('Coca-Cola Pack', 7)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/fwog.png" alt="Movie Ticket">
+                    <div class="item-details">
+                        <span class="item-name">dog</span>
+                        <span class="item-price">$15</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Movie Ticket', 15)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Movie Ticket">0</span>
+                        <button class="buy-button" onclick="buyItem('Movie Ticket', 15)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/gigachad.png" alt="Joint">
+                    <div class="item-details">
+                        <span class="item-name">gigashit</span>
+                        <span class="item-price">$18</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Joint', 18)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Joint">0</span>
+                        <button class="buy-button" onclick="buyItem('Joint', 18)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/goatseus.png" alt="Book">
+                    <div class="item-details">
+                        <span class="item-name">sheep</span>
+                        <span class="item-price">$20</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Book', 20)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Book">0</span>
+                        <button class="buy-button" onclick="buyItem('Book', 20)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/moodeng.png" alt="Dildo">
+                    <div class="item-details">
+                        <span class="item-name">Dildo</span>
+                        <span class="item-price">$30</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Dildo', 30)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Dildo">0</span>
+                        <button class="buy-button" onclick="buyItem('Dildo', 30)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/pnut.png" alt="Lobster Dinner">
+                    <div class="item-details">
+                        <span class="item-name">almond</span>
+                        <span class="item-price">$60</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Lobster Dinner', 60)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Lobster Dinner">0</span>
+                        <button class="buy-button" onclick="buyItem('Lobster Dinner', 60)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/trump.png" alt="Video Game">
+                    <div class="item-details">
+                        <span class="item-name">twemp</span>
+                        <span class="item-price">$70</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Video Game', 70)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Video Game">0</span>
+                        <button class="buy-button" onclick="buyItem('Video Game', 70)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/amazon-echo.jpg" alt="Amazon Echo">
+                    <div class="item-details">
+                        <span class="item-name">Amazon Echo</span>
+                        <span class="item-price">$110</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Amazon Echo', 110)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Amazon Echo">0</span>
+                        <button class="buy-button" onclick="buyItem('Amazon Echo', 110)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/netflix.jpg" alt="Year of Netflix">
+                    <div class="item-details">
+                        <span class="item-name">Year of Netflix</span>
+                        <span class="item-price">$130</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Year of Netflix', 130)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Year of Netflix">0</span>
+                        <button class="buy-button" onclick="buyItem('Year of Netflix', 130)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/air-jordans.jpg" alt="Air Jordans">
+                    <div class="item-details">
+                        <span class="item-name">Air Jordans</span>
+                        <span class="item-price">$150</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Air Jordans', 150)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Air Jordans">0</span>
+                        <button class="buy-button" onclick="buyItem('Air Jordans', 150)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/airpods.jpg" alt="Airpods">
+                    <div class="item-details">
+                        <span class="item-name">Airpods</span>
+                        <span class="item-price">$220</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Airpods', 220)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Airpods">0</span>
+                        <button class="buy-button" onclick="buyItem('Airpods', 220)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/crystal.jpg" alt="crystal" "="">
+                    <div class="item-details">
+                        <span class="item-name">Crystal</span>
+                        <span class="item-price">$280</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Crystal', 280)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Crystal">0</span>
+                        <button class="buy-button" onclick="buyItem('Crystal', 3280)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/hoe.jpeg" alt="hoe">
+                    <div class="item-details">
+                        <span class="item-name">Hoe</span>
+                        <span class="item-price">$300</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Hoe', 300)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Hoe">0</span>
+                        <button class="buy-button" onclick="buyItem('Hoe', 300)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/gaming-console.jpg" alt="Gaming Console">
+                    <div class="item-details">
+                        <span class="item-name">Gaming Console</span>
+                        <span class="item-price">$350</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Gaming Console', 350)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Gaming Console">0</span>
+                        <button class="buy-button" onclick="buyItem('Gaming Console', 350)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/kitten.jpg" alt="Kitten">
+                    <div class="item-details">
+                        <span class="item-name">Kitten</span>
+                        <span class="item-price">$1,500</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Kitten', 1500)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Kitten">0</span>
+                        <button class="buy-button" onclick="buyItem('Kitten', 1500)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/puppy.jpg" alt="Puppy">
+                    <div class="item-details">
+                        <span class="item-name">Puppy</span>
+                        <span class="item-price">$1,500</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Puppy', 1500)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Puppy">0</span>
+                        <button class="buy-button" onclick="buyItem('Puppy', 1500)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/auto-rickshaw.jpg" alt="Auto Rickshaw">
+                    <div class="item-details">
+                        <span class="item-name">Auto Rickshaw</span>
+                        <span class="item-price">$2,500</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Auto Rickshaw', 2500)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Auto Rickshaw">0</span>
+                        <button class="buy-button" onclick="buyItem('Auto Rickshaw', 2500)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/horse.jpg" alt="Horse">
+                    <div class="item-details">
+                        <span class="item-name">Horse</span>
+                        <span class="item-price">$3,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Horse', 3000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Horse">0</span>
+                        <button class="buy-button" onclick="buyItem('Horse', 3000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/farmland.jpg" alt="Acre of Farmland">
+                    <div class="item-details">
+                        <span class="item-name">Acre of Farmland</span>
+                        <span class="item-price">$4,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Acre of Farmland', 4000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Acre of Farmland">0</span>
+                        <button class="buy-button" onclick="buyItem('Acre of Farmland', 4000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/designer-handbag.jpg" alt="Designer Handbag">
+                    <div class="item-details">
+                        <span class="item-name">Designer Handbag</span>
+                        <span class="item-price">$6,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Designer Handbag', 6000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Designer Handbag">0</span>
+                        <button class="buy-button" onclick="buyItem('Designer Handbag', 6000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/hot-tub.jpg" alt="Hot Tub">
+                    <div class="item-details">
+                        <span class="item-name">Hot Tub</span>
+                        <span class="item-price">$7,500</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Hot Tub', 7500)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Hot Tub">0</span>
+                        <button class="buy-button" onclick="buyItem('Hot Tub', 7500)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/luxury-wine.jpg" alt="Luxury Wine">
+                    <div class="item-details">
+                        <span class="item-name">Luxury Wine</span>
+                        <span class="item-price">$8,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Luxury Wine', 8000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Luxury Wine">0</span>
+                        <button class="buy-button" onclick="buyItem('Luxury Wine', 8000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/jet-ski.jpg" alt="Jet Ski">
+                    <div class="item-details">
+                        <span class="item-name">Jet Ski</span>
+                        <span class="item-price">$14,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Jet Ski', 14000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Jet Ski">0</span>
+                        <button class="buy-button" onclick="buyItem('Jet Ski', 14000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/rolex.jpg" alt="Rolex">
+                    <div class="item-details">
+                        <span class="item-name">Rolex</span>
+                        <span class="item-price">$18,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Rolex', 18000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Rolex">0</span>
+                        <button class="buy-button" onclick="buyItem('Rolex', 18000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/tesla.jpg" alt="Tesla">
+                    <div class="item-details">
+                        <span class="item-name">Tesla</span>
+                        <span class="item-price">$80,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Tesla', 80000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Tesla">0</span>
+                        <button class="buy-button" onclick="buyItem('Tesla', 80000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/monster-truck.jpg" alt="Monster Truck">
+                    <div class="item-details">
+                        <span class="item-name">Monster Truck</span>
+                        <span class="item-price">$160,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Monster Truck', 160000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Monster Truck">0</span>
+                        <button class="buy-button" onclick="buyItem('Monster Truck', 160000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/ferrari.jpg" alt="Ferrari">
+                    <div class="item-details">
+                        <span class="item-name">Ferrari</span>
+                        <span class="item-price">$270,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Ferrari', 270000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Ferrari">0</span>
+                        <button class="buy-button" onclick="buyItem('Ferrari', 270000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/single-family-home.jpg" alt="Single Family Home">
+                    <div class="item-details">
+                        <span class="item-name">Single Family Home</span>
+                        <span class="item-price">$350,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Single Family Home', 350000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Single Family Home">0</span>
+                        <button class="buy-button" onclick="buyItem('Single Family Home', 350000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/gold-bar.jpg" alt="Gold Bar">
+                    <div class="item-details">
+                        <span class="item-name">Gold Bar</span>
+                        <span class="item-price">$750,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Gold Bar', 750000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Gold Bar">0</span>
+                        <button class="buy-button" onclick="buyItem('Gold Bar', 750000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/mcdonalds-franchise.jpg" alt="McDonalds Franchise">
+                    <div class="item-details">
+                        <span class="item-name">McDonalds Franchise</span>
+                        <span class="item-price">$1,800,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('McDonalds Franchise', 1800000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="McDonalds Franchise">0</span>
+                        <button class="buy-button" onclick="buyItem('McDonalds Franchise', 1800000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/super-bowl-ad.jpg" alt="Super Bowl Ad">
+                    <div class="item-details">
+                        <span class="item-name">Super Bowl Ad</span>
+                        <span class="item-price">$6,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Super Bowl Ad', 6000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Super Bowl Ad">0</span>
+                        <button class="buy-button" onclick="buyItem('Super Bowl Ad', 6000000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/yacht.jpg" alt="Yacht">
+                    <div class="item-details">
+                        <span class="item-name">Yacht</span>
+                        <span class="item-price">$8,500,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Yacht', 8500000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Yacht">0</span>
+                        <button class="buy-button" onclick="buyItem('Yacht', 8500000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/m1-abrams.jpg" alt="M1 Abrams">
+                    <div class="item-details">
+                        <span class="item-name">M1 Abrams</span>
+                        <span class="item-price">$9,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('M1 Abrams', 9000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="M1 Abrams">0</span>
+                        <button class="buy-button" onclick="buyItem('M1 Abrams', 9000000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/formula-1-car.jpg" alt="Formula 1 Car">
+                    <div class="item-details">
+                        <span class="item-name">Formula 1 Car</span>
+                        <span class="item-price">$18,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Formula 1 Car', 18000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Formula 1 Car">0</span>
+                        <button class="buy-button" onclick="buyItem('Formula 1 Car', 18000000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/apache-helicopter.jpg" alt="Apache Helicopter">
+                    <div class="item-details">
+                        <span class="item-name">Apache Helicopter</span>
+                        <span class="item-price">$35,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Apache Helicopter', 35000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Apache Helicopter">0</span>
+                        <button class="buy-button" onclick="buyItem('Apache Helicopter', 35000000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/mansion.jpg" alt="Mansion">
+                    <div class="item-details">
+                        <span class="item-name">Mansion</span>
+                        <span class="item-price">$50,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Mansion', 50000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Mansion">0</span>
+                        <button class="buy-button" onclick="buyItem('Mansion', 50000000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/make-a-movie.jpg" alt="Make a Movie">
+                    <div class="item-details">
+                        <span class="item-name">Make a Movie</span>
+                        <span class="item-price">$120,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Make a Movie', 120000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Make a Movie">0</span>
+                        <button class="buy-button" onclick="buyItem('Make a Movie', 120000000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/boeing-747.jpg" alt="Boeing 747">
+                    <div class="item-details">
+                        <span class="item-name">Boeing 747</span>
+                        <span class="item-price">$160,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Boeing 747', 160000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Boeing 747">0</span>
+                        <button class="buy-button" onclick="buyItem('Boeing 747', 160000000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/mona-lisa.jpg" alt="Mona Lisa">
+                    <div class="item-details">
+                        <span class="item-name">Mona Lisa</span>
+                        <span class="item-price">$850,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Mona Lisa', 850000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Mona Lisa">0</span>
+                        <button class="buy-button" onclick="buyItem('Mona Lisa', 850000000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/skyscraper.jpg" alt="Skyscraper">
+                    <div class="item-details">
+                        <span class="item-name">Skyscraper</span>
+                        <span class="item-price">$900,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Skyscraper', 900000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Skyscraper">0</span>
+                        <button class="buy-button" onclick="buyItem('Skyscraper', 900000000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/cruise-ship.jpg" alt="Cruise Ship">
+                    <div class="item-details">
+                        <span class="item-name">Cruise Ship</span>
+                        <span class="item-price">$1,000,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('Cruise Ship', 1000000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="Cruise Ship">0</span>
+                        <button class="buy-button" onclick="buyItem('Cruise Ship', 1000000000)">Buy</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/nba-team.jpg" alt="NBA Team">
+                    <div class="item-details">
+                        <span class="item-name">NBA Team</span>
+                        <span class="item-price">$2,300,000,000</span>
+                    </div>
+                    <div class="button-group">
+                        <button class="sell-button" onclick="sellItem('NBA Team', 2300000000)" disabled="">Sell</button>
+                        <span class="item-quantity" data-item="NBA Team">0</span>
+                        <button class="buy-button" onclick="buyItem('NBA Team', 2300000000)">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div id="receipt">
+                <h2>Your Receipt</h2>
+                <div id="receipt-items"></div>
+                <hr>
+                <div id="total"></div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">×</span>
+            <h2>How it works</h2>
+            <p>
+                
+                💥 From day one, Pump.fun has been delivering impressive results — every number here represents real revenue! Imagine feeling that power and using it as if it’s all yours! 💸🚀
+            </p>
+            <button class="popup-close-button" onclick="closePopup()">back </button>
+        </div>
+    </div>
+    <script src="js/myscript.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/background.js"></script>
+
+
+</div></body></html>
