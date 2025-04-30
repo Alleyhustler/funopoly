@@ -581,3 +581,23 @@ h1, .social-link {
     color: #fff; /* Text color */
     text-align: left; /* Align text */
 }
+
+.main-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .logo-container-main {
+    margin-right: 20px;
+  }
+  
+  .logo-container-main img {
+    max-height: 50px;
+    max-width: 150px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
